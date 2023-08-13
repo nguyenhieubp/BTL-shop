@@ -1,0 +1,104 @@
+@import "../../App.scss";
+
+.product-items {
+  row-gap: 20px;
+  .product-item {
+    cursor: pointer;
+    box-shadow: rgba(99, 99, 99, 0.05) 0px 2px 8px 0px;
+    padding: 18px;
+    border-radius: 4px;
+    transition: $transition;
+
+    &-body {
+      padding: 12px 0;
+    }
+
+    &-img {
+      position: relative;
+      width: 100%;
+
+      .product-item-cat {
+        position: absolute;
+        top: 8px;
+        right: 8px;
+        border-radius: 8px;
+        padding-right: 8px;
+        padding-left: 8px;
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+      }
+    }
+
+    &-title {
+      padding: 8px 0;
+      opacity: 0.8;
+      display: block;
+    }
+    &:hover {
+      box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    }
+  }
+
+  @media screen and (min-width: 576px) {
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 20px;
+  }
+
+  @media screen and (min-width: 768px) {
+    grid-template-columns: repeat(6, 1fr);
+    column-gap: 20px;
+  }
+
+  @media screen and (min-width: 992px) {
+    grid-template-columns: repeat(8, 1fr);
+    column-gap: 20px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    grid-template-columns: repeat(6, 1fr);
+    column-gap: 20px;
+  }
+}
+
+.search-sort-container {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  padding: 0.5rem;
+
+  .search-container {
+    display: flex;
+    align-items: center;
+    border: 1px solid #ccc;
+    padding: 0.5rem;
+    border-radius: 4px;
+
+    input {
+      margin-left: 0.5rem;
+      width: 40rem;
+    }
+
+    .IoMdSearch {
+      color: grey;
+    }
+  }
+
+  .sort-container {
+    display: flex;
+    align-items: center;
+    border: 1px solid #ccc;
+    padding: 0.5rem;
+    border-radius: 4px;
+
+    label {
+      margin-right: 0.5rem;
+    }
+
+    select {
+      border: none;
+    }
+  }
+}
+.section-title * {
+  font-size: 1.6rem !important;
+}

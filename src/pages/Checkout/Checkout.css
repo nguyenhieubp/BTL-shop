@@ -1,0 +1,70 @@
+/* src/components/Checkout.css */
+.checkout {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 50px;
+}
+
+.checkout h2 {
+  margin-bottom: 20px;
+}
+
+.checkout .products {
+  flex: 1;
+  margin-right: 20px;
+}
+
+.checkout .products ul {
+  border: 1px solid #000;
+  padding: 20px;
+  border-radius: 5px;
+}
+
+.checkout .products .product {
+  padding: 10px 0;
+  border-bottom: 1px solid #000;
+}
+
+.checkout .products .product:last-child {
+  border-bottom: none;
+}
+
+.checkout .products .total {
+  margin-top: 20px;
+  text-align: right;
+  font-weight: bold;
+}
+
+.checkout .checkout-form {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  border: 1px solid black;
+  padding: 20px;
+  border-radius: 5px;
+  width: 100%; /* Add this line */
+}
+
+.checkout .checkout-form label {
+  margin: 10px 0;
+}
+
+.checkout .checkout-form input {
+  border: 1px solid #000;
+  padding: 5px;
+  margin-bottom: 20px;
+  width: 100%; /* Add this line */
+  border-radius: 5px;
+}
+
+.checkout .checkout-form button {
+  margin-top: 20px;
+  border: 1px solid black;
+  padding: 10px 20px;
+  cursor: pointer;
+  background-color: lightblue;
+  border-radius: 5px;
+}

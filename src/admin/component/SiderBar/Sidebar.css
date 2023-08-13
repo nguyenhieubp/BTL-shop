@@ -1,0 +1,36 @@
+/* Sidebar.css */
+.sidebar {
+  position: fixed;
+  top: 90px; /* Chiều cao của header, điều chỉnh theo yêu cầu */
+  left: 0;
+  bottom: 0;
+  width: 200px;
+  background-color: #f0f0f0;
+  overflow-y: auto;
+  /* Thêm các thuộc tính khác cho trang trí */
+}
+
+.sidebar ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.sidebar li {
+  padding: 25px;
+  border-bottom: 1px solid;
+}
+
+.sidebar li a {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: #333;
+}
+
+.sidebar li a svg {
+  margin-right: 8px;
+}
+
+.active {
+  background-color: #b7b0b2;
+}
